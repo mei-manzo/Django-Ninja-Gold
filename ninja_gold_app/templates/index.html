@@ -13,13 +13,13 @@
         {% csrf_token %}
         <div id = "top-label">
             <label for="first_name">Your gold:</label>
-            <p> (gold count goes here) </p>
+            <p> {{ request.session.counter}} </p>
         </div>
         <div id = "container">
             <div class = "farm">
                 <h2>Farm</h2>
                 <p>(Earns 10-20 golds)</p>
-                <a href="http://google.com"><input type="button" value = "Find Gold!"/></a>
+                <a href="http://google.com"><input type="button" value = "Find Gold!" name = "farm" /></a>
             </div>
             <div class = "farm">
                 <h2>Cave</h2>
