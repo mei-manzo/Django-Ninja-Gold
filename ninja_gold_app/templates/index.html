@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'index.css' %}">  
+    <title>Ninja Gold Main</title>
+</head>
+<body>
+    <form action="" method='POST'>
+        {% csrf_token %}
+        <div id = "top-label">
+            <label for="first_name">Your gold:</label>
+            <p> (gold count goes here) </p>
+        </div>
+        <div id = "container">
+            <div class = "farm">
+                <h2>Farm</h2>
+                <p>(Earns 10-20 golds)</p>
+                <a href="http://google.com"><input type="button" value = "Find Gold!"/></a>
+            </div>
+            <div class = "farm">
+                <h2>Cave</h2>
+                <p>(Earns 5-10 golds)</p>
+                <a href="http://google.com"><input type="button" value = "Find Gold!"/></a>
+            </div>
+            <div class = "farm">
+                <h2>House</h2>
+                <p>(Earns 2-5 golds)</p>
+                <a href="http://google.com"><input type="button" value = "Find Gold!"/></a>
+            </div>
+            <div class = "farm">
+                <h2>Casino</h2>
+                <p>(Earns/takes 0-50 golds)</p>
+                <a href="http://google.com"><input type="button" value = "Find Gold!"/></a>
+            </div>
+        </div>
+        <div id = "activities">
+            <h4>Activities:</h>
+            <p>(activities will go here)</p>
+        </div>
+        <!-- <input type="submit" value="Generate" id = "button">
+        <a href="http://google.com"><input type="button" value = "Reset"/></a> -->
+    </form>
+</body>
+</html>

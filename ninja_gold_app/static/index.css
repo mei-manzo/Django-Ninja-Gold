@@ -1,0 +1,58 @@
+#top-label p {
+    width: 150px;
+    height: 20px;
+    border-color: black;  
+    border-width: .1em;  
+    border-style: solid;
+    display: inline-block;
+}
+
+#container{
+    display: flex;
+}
+
+#top-label{
+    margin-left: 50px;
+}
+
+.farm {
+    flex: 1;
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+    padding: 0px;
+    width: 150px;
+    height: 200px;
+    border-color: black;  
+    border-width: .1em;  
+    border-style: solid;
+}
+
+.farm h2{
+    margin-left: 110px;
+}
+
+.farm p{
+    margin-left: 80px;
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+
+.farm a{
+    margin-top: 100px;
+    padding-top: 100px;
+    margin-left: 100px;
+}
+
+#activities p {
+    margin-top: 5px;
+    width: 1417px;
+    height: 90px;
+    border-color: black;  
+    border-width: .1em;  
+    border-style: solid;
+}
+
+#activities {
+    margin-left: 50px;
+}
