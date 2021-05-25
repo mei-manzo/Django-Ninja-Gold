@@ -49,9 +49,12 @@
         <div id = "activities">
             <h4>Activities:</h>
             <div id = "box">
-                <h6>texting</h6>
                 {% for activity in activities %}
-                <p>{{activity}}</p>
+                    {%if 'Lost' in activity %}
+                <p class = "red">{{activity}}</p>
+                    {%else%}
+                <p class = "green">{{activity}}</p>
+                    {%endif%}
                 {% endfor %}
             </div>
         </div>

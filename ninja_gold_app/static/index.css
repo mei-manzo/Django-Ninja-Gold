@@ -47,14 +47,14 @@
 .green{
     color: green;
 }
+.red {
+    color: red;
+}
 
 #activities p {
-    margin-top: 5px;
-    width: 1417px;
-    height: 1000px;
-    border-color: black;  
-    border-width: .1em;  
-    border-style: solid;
+    margin-top: 0px;
+    width: 400px;
+    height: 10px;
 }
 
 #activities {

@@ -9,8 +9,11 @@ import random, pytz
 def index(request):
     if 'gold' not in request.session or 'activities' not in request.session:
         request.session['gold'] = 0  
-        request.session['activities'] = []     
-    return render(request, 'index.html')
+        request.session['activities'] = [] 
+    context = {
+        'activities': request.session['activities'],
+    }    
+    return render(request, 'index.html', context)
 
 def process_money(request):
     if request.method == 'POST':
