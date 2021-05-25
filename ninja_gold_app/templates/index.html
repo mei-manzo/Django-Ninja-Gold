@@ -9,41 +9,54 @@
     <title>Ninja Gold Main</title>
 </head>
 <body>
-    <form action="" method='POST'>
-        {% csrf_token %}
+    <!-- <form action="/process_money" method='POST'> -->
+        <!-- {% csrf_token %} -->
         <div id = "top-label">
             <label for="first_name">Your gold:</label>
-            <p> {{ request.session.counter}} </p>
+            <p> {{ request.session.gold}} </p>
         </div>
         <div id = "container">
-            <div class = "farm">
+            <form action="/process_money" method='POST'class = "place">
+                {% csrf_token %}
                 <h2>Farm</h2>
                 <p>(Earns 10-20 golds)</p>
-                <input type="submit" value="Find Gold!" class = "button" name = "farm">
-                <!-- <a href="http://google.com"><input type="button" value = "Find Gold!" name = "farm" /></a> -->
-            </div>
-            <div class = "farm">
+                <!-- <input type="submit" value="Find Gold!" class = "button" name = "farm"> -->
+                <input type="hidden" name ="place" value="farm">
+                <input type="submit" value = "Find Gold!" class= "button">
+            </form>
+            <form action="/process_money" method='POST'class = "place">
+                {% csrf_token %}
                 <h2>Cave</h2>
                 <p>(Earns 5-10 golds)</p>
-                <a href="http://google.com"><input type="button" value = "Find Gold!"/></a>
-            </div>
-            <div class = "farm">
+                <input type="hidden" name ="place" value="cave">
+                <input type="submit" value = "Find Gold!" class= "button">
+            </form>
+            <form action="/process_money" method='POST'class = "place">
+                {% csrf_token %}
                 <h2>House</h2>
                 <p>(Earns 2-5 golds)</p>
-                <a href="http://google.com"><input type="button" value = "Find Gold!"/></a>
-            </div>
-            <div class = "farm">
+                <input type="hidden" name ="place" value="house">
+                <input type="submit" value = "Find Gold!" class= "button">
+            </form>
+            <form action="/process_money" method='POST'class = "place">
+                {% csrf_token %}
                 <h2>Casino</h2>
                 <p>(Earns/takes 0-50 golds)</p>
-                <a href="http://google.com"><input type="button" value = "Find Gold!"/></a>
-            </div>
+                <input type="hidden" name ="place" value="casino">
+                <input type="submit" value = "Find Gold!" class= "button">
+            </form>
         </div>
         <div id = "activities">
             <h4>Activities:</h>
-            <p>(activities will go here)</p>
+            <div id = "box">
+                <h6>texting</h6>
+                {% for activity in activities %}
+                <p>{{activity}}</p>
+                {% endfor %}
+            </div>
         </div>
         <!-- <input type="submit" value="Generate" id = "button">
         <a href="http://google.com"><input type="button" value = "Reset"/></a> -->
-    </form>
+    <!-- </form> -->
 </body>
 </html>

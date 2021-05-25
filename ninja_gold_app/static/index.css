@@ -15,7 +15,7 @@
     margin-left: 50px;
 }
 
-.farm {
+.place {
     flex: 1;
     margin-top: 20px;
     margin-right: 50px;
@@ -28,26 +28,30 @@
     border-style: solid;
 }
 
-.farm h2{
+.place h2{
     margin-left: 105px;
 }
 
-.farm p{
+.place p{
     margin-left: 80px;
     margin-bottom: 30px;
     padding-top: 20px;
 }
 
 .button {
-    margin-top: 100px;
-    padding-top: 100px;
+    margin-top: 0px;
+    padding-top: 0px;
     margin-left: 100px;
+}
+
+.green{
+    color: green;
 }
 
 #activities p {
     margin-top: 5px;
     width: 1417px;
-    height: 90px;
+    height: 1000px;
     border-color: black;  
     border-width: .1em;  
     border-style: solid;
@@ -55,4 +59,9 @@
 
 #activities {
     margin-left: 50px;
+}
+#box{
+    border-color: black;  
+    border-width: .1em;  
+    border-style: solid;
 }
